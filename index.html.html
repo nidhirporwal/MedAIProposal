@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-Powered Medical Billing Transparency Proposal</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        background-color: #f0f2f5;
+        color: #333;
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+    header {
+        background: linear-gradient(135deg, #003b73, #0074d9);
+        color: white;
+        padding: 3rem 1rem;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.6rem;
+    }
+    header p {
+        font-size: 1.4rem;
+        opacity: 0.95;
+    }
+    section {
+        max-width: 1100px;
+        margin: auto;
+        padding: 2.5rem 1.5rem;
+        background: linear-gradient(180deg, rgba(0,116,217,0.05) 0%, rgba(255,255,255,1) 100%);
+        border-radius: 15px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+    h2 {
+        color: #003b73;
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    .card {
+        background-color: rgba(255,255,255,0.95);
+        padding: 2.5rem;
+        margin-bottom: 2.5rem;
+        border-radius: 15px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+        backdrop-filter: blur(6px);
+        position: relative;
+    }
+    .arrow-points li {
+        list-style: none;
+        position: relative;
+        padding-left: 2.2rem;
+        margin-bottom: 1.2rem;
+    }
+    .arrow-points li::before {
+        content: "▶";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #0074d9;
+        font-size: 1.1rem;
+    }
+    .quotes {
+        position: relative;
+        overflow: hidden;
+        height: 180px;
+        margin: 2rem 0;
+    }
+    .quote {
+        display: none;
+        text-align: center;
+        font-style: italic;
+        padding: 1rem;
+        transition: opacity 0.6s ease-in-out;
+    }
+    .quote.active {
+        display: block;
+    }
+    .quote-nav {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .quote-nav button {
+        background: #0074d9;
+        border: none;
+        color: white;
+        padding: 0.5rem 1rem;
+        margin: 0 0.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .timeline {
+        position: relative;
+        margin: 2rem 0;
+        padding-left: 2rem;
+        border-left: 3px solid #0074d9;
+    }
+    .timeline-step {
+        margin: 1.5rem 0;
+        position: relative;
+    }
+    .timeline-step::before {
+        content: "";
+        position: absolute;
+        left: -13px;
+        top: 5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #0074d9;
+        box-shadow: 0 0 0 4px rgba(0,116,217,0.2);
+    }
+    .timeline-step strong {
+        display: block;
+        color: #003b73;
+        margin-bottom: 0.3rem;
+    }
+    footer {
+        background-color: #003b73;
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1rem;
+        margin-top: 3rem;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>AI-Powered Medical Billing Transparency</h1>
+    <p>Transforming healthcare costs into clear, actionable information for every patient</p>
+</header>
+
+<section>
+    <div class="card">
+        <h2>Main Issue</h2>
+        <ul class="arrow-points">
+            <li>Medical billing in the United States lacks consistency and transparency, leaving patients vulnerable to unpredictable and inflated costs.</li>
+            <li>Itemized bills often contain complex codes and prices that differ dramatically from one provider to another, making it difficult to judge fairness.</li>
+            <li>Without the right knowledge or tools, many patients overpay for healthcare services, unaware that they can challenge or reduce these charges.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Proposed Solution</h2>
+        <ul class="arrow-points">
+            <li>Develop an AI-driven application that can scan and interpret medical receipts (photos or PDFs) using advanced OCR technology.</li>
+            <li>Cross-reference each line item with trusted Medicare benchmarks, adjusted for regional pricing variations.</li>
+            <li>Highlight any charges that are significantly higher than the benchmark, providing clear, data-backed justification.</li>
+            <li>Automatically generate professional, personalized dispute letters to help patients negotiate or contest unfair charges.</li>
+            <li>Offer an intuitive interface that explains results in plain language, making it accessible to non-experts.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>What People Are Saying</h2>
+        <div class="quotes">
+            <div class="quote active">“I once received a bill for a simple X-ray that was five times higher than what my neighbor paid at a different clinic. I felt powerless until I started looking into fair price tools.” – Patient Experience</div>
+            <div class="quote">“As a doctor, I’ve seen patients delay or avoid care because they feared unpredictable costs. Even I’ve been confused by my own medical bills. Transparency is essential.” – Dr. James R.</div>
+            <div class="quote">“I was billed $600 for a test that Medicare values at under $100. Without help, I would’ve paid it blindly. Patients deserve clarity and fairness.” – Caregiver Testimonial</div>
+        </div>
+        <div class="quote-nav">
+            <button onclick="prevQuote()">Previous</button>
+            <button onclick="nextQuote()">Next</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Step-by-Step Plan</h2>
+        <div class="timeline">
+            <div class="timeline-step">
+                <strong>Gather Information and Tools</strong>
+                Compile a diverse range of sample receipts, identify commonly overcharged services, and secure a comprehensive Medicare pricing database.
+            </div>
+            <div class="timeline-step">
+                <strong>System Setup</strong>
+                Integrate OCR engines and AI models to ensure accurate reading, interpretation, and classification of billing data.
+            </div>
+            <div class="timeline-step">
+                <strong>Extract Data</strong>
+                Build seamless upload functionality and ensure the system organizes extracted text into a clean, structured format.
+            </div>
+            <div class="timeline-step">
+                <strong>Price Comparison</strong>
+                Implement automated comparison logic to flag anomalies, factoring in geographic pricing adjustments.
+            </div>
+            <div class="timeline-step">
+                <strong>User Interface</strong>
+                Design a clear, visually engaging dashboard that highlights issues and allows direct action, like dispute generation.
+            </div>
+            <div class="timeline-step">
+                <strong>Privacy & Security</strong>
+                Adhere to HIPAA standards, anonymize data where possible, and secure explicit user consent.
+            </div>
+            <div class="timeline-step">
+                <strong>Launch & Iterate</strong>
+                Deploy the platform, gather user feedback, update pricing data regularly, and refine AI accuracy over time.
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 AI Medical Billing Transparency Project | All Rights Reserved</p>
+</footer>
+
+<script>
+    let currentQuote = 0;
+    const quotes = document.querySelectorAll('.quote');
+
+    function showQuote(index) {
+        quotes.forEach((q, i) => q.classList.remove('active'));
+        quotes[index].classList.add('active');
+    }
+
+    function nextQuote() {
+        currentQuote = (currentQuote + 1) % quotes.length;
+        showQuote(currentQuote);
+    }
+
+    function prevQuote() {
+        currentQuote = (currentQuote - 1 + quotes.length) % quotes.length;
+        showQuote(currentQuote);
+    }
+
+    // Auto rotate every 8 seconds (slower)
+    setInterval(nextQuote, 8000);
+</script>
+</body>
+</html>
